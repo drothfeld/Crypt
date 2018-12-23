@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103821CE0F1E00CE2943 /* Rarity.swift */; };
 		B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103B21CE128B00CE2943 /* Rarities.swift */; };
+		B07F103E21D019BC00CE2943 /* RarityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103D21D019BC00CE2943 /* RarityList.swift */; };
 		B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */; };
 		B0BEF1C921C5D1F60006C132 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1C821C5D1F60006C132 /* GameScene.sks */; };
 		B0BEF1CB21C5D1F60006C132 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1CA21C5D1F60006C132 /* Actions.sks */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		B07F103821CE0F1E00CE2943 /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 		B07F103B21CE128B00CE2943 /* Rarities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarities.swift; sourceTree = "<group>"; };
+		B07F103D21D019BC00CE2943 /* RarityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityList.swift; sourceTree = "<group>"; };
 		B0BEF1C321C5D1F60006C132 /* Crypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BEF1C821C5D1F60006C132 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				B07F103821CE0F1E00CE2943 /* Rarity.swift */,
 				B07F103B21CE128B00CE2943 /* Rarities.swift */,
+				B07F103D21D019BC00CE2943 /* RarityList.swift */,
 			);
 			path = Rarity;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F103E21D019BC00CE2943 /* RarityList.swift in Sources */,
 				B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */,
 				B0BEF1CF21C5D1F60006C132 /* ViewController.swift in Sources */,
 				B0BEF1CD21C5D1F60006C132 /* GameScene.swift in Sources */,
