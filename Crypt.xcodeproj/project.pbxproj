@@ -10,6 +10,7 @@
 		B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103821CE0F1E00CE2943 /* Rarity.swift */; };
 		B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103B21CE128B00CE2943 /* Rarities.swift */; };
 		B07F103E21D019BC00CE2943 /* RarityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F103D21D019BC00CE2943 /* RarityList.swift */; };
+		B07F104721D01C2100CE2943 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F104621D01C2100CE2943 /* Item.swift */; };
 		B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */; };
 		B0BEF1C921C5D1F60006C132 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1C821C5D1F60006C132 /* GameScene.sks */; };
 		B0BEF1CB21C5D1F60006C132 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1CA21C5D1F60006C132 /* Actions.sks */; };
@@ -23,6 +24,7 @@
 		B07F103821CE0F1E00CE2943 /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 		B07F103B21CE128B00CE2943 /* Rarities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarities.swift; sourceTree = "<group>"; };
 		B07F103D21D019BC00CE2943 /* RarityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityList.swift; sourceTree = "<group>"; };
+		B07F104621D01C2100CE2943 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B0BEF1C321C5D1F60006C132 /* Crypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BEF1C821C5D1F60006C132 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		B07F103421CE0E7F00CE2943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B07F103F21D01B6400CE2943 /* Item */,
 				B07F103A21CE0FD800CE2943 /* Rarity */,
 			);
 			path = Models;
@@ -62,6 +65,46 @@
 				B07F103D21D019BC00CE2943 /* RarityList.swift */,
 			);
 			path = Rarity;
+			sourceTree = "<group>";
+		};
+		B07F103F21D01B6400CE2943 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				B07F104621D01C2100CE2943 /* Item.swift */,
+				B07F104221D01BD000CE2943 /* Tool */,
+				B07F104121D01B9500CE2943 /* Relic */,
+				B07F104021D01B7E00CE2943 /* Gear */,
+				B07F104321D01BFE00CE2943 /* Weapon */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		B07F104021D01B7E00CE2943 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gear;
+			sourceTree = "<group>";
+		};
+		B07F104121D01B9500CE2943 /* Relic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Relic;
+			sourceTree = "<group>";
+		};
+		B07F104221D01BD000CE2943 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B07F104321D01BFE00CE2943 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weapon;
 			sourceTree = "<group>";
 		};
 		B0BEF1BA21C5D1F60006C132 = {
@@ -173,6 +216,7 @@
 				B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */,
 				B0BEF1CF21C5D1F60006C132 /* ViewController.swift in Sources */,
 				B0BEF1CD21C5D1F60006C132 /* GameScene.swift in Sources */,
+				B07F104721D01C2100CE2943 /* Item.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,
 			);

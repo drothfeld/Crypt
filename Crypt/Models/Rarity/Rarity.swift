@@ -39,4 +39,9 @@ struct Rarity {
             self.sellValueMultiplier = sellValueMultiplier
         }
     }
+    
+    // Checks if two rarities are the same
+    func isEqualTo(rarity: Rarity) -> Bool {
+        return (self.rarityRank == rarity.rarityRank)
+    }
 }
