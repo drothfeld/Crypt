@@ -8,10 +8,29 @@
 
 import Foundation
 
-//class Relic: Item {
-//    var healAmountLowRange: Int? = 0
-//    var healAmountHighRange: Int? = 0
-//    var damageAmountLowRange: Int? = 0
-//    var damageAmountHighRange: Int? = 0
-//
-//}
+class Relic: Item {
+    // Fields
+    var damageType: DamageType
+    var healRange: [Int]? = [0, 0]
+    var damageRange: [Int]? = [0, 0]
+    
+    // Constructor
+    init(name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, damageType: DamageType, healRange: [Int]? = [0, 0], damageRange: [Int]? = [0, 0]) {
+        self.damageType = damageType
+        self.healRange = healRange
+        self.damageRange = damageRange
+        
+        // Super constructor for item parent class
+        super.init(name: name, description: description, rarity: rarity, inventorySpace: inventorySpace, goldValue: goldValue)
+    }
+    
+    // Checks if the relic does damage
+    func doesDamage() -> Bool {
+        return (damageRange![1] > 0 )
+    }
+    
+    // Checks if the relic heals the user
+    func doesHealing() -> Bool {
+        return (healRange![1] > 0)
+    }
+}
