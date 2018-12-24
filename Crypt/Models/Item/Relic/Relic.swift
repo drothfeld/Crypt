@@ -11,11 +11,11 @@ import Foundation
 class Relic: Item {
     // Fields
     var damageType: DamageType
-    var healRange: [Int]? = [0, 0]
-    var damageRange: [Int]? = [0, 0]
+    var healRange: NumberRange? = NumberRange(minValue: 0, maxValue: 0)
+    var damageRange: NumberRange? = NumberRange(minValue: 0, maxValue: 0)
     
     // Constructor
-    init(name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, damageType: DamageType, healRange: [Int]? = [0, 0], damageRange: [Int]? = [0, 0]) {
+    init(name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, damageType: DamageType, healRange: NumberRange?, damageRange: NumberRange?) {
         self.damageType = damageType
         self.healRange = healRange
         self.damageRange = damageRange
@@ -26,11 +26,11 @@ class Relic: Item {
     
     // Checks if the relic does damage
     func doesDamage() -> Bool {
-        return (damageRange![1] > 0 )
+        return ((damageRange?.isNonZero())!)
     }
     
     // Checks if the relic heals the user
     func doesHealing() -> Bool {
-        return (healRange![1] > 0)
+        return ((healRange?.isNonZero())!)
     }
 }

@@ -15,6 +15,7 @@
 		B07F104C21D054F400CE2943 /* MonsterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F104B21D054F400CE2943 /* MonsterType.swift */; };
 		B07F104F21D0571600CE2943 /* DamageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F104E21D0571600CE2943 /* DamageType.swift */; };
 		B07F105121D0598500CE2943 /* DefenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F105021D0598500CE2943 /* DefenseType.swift */; };
+		B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F105821D16C4F00CE2943 /* NumberRange.swift */; };
 		B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */; };
 		B0BEF1C921C5D1F60006C132 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1C821C5D1F60006C132 /* GameScene.sks */; };
 		B0BEF1CB21C5D1F60006C132 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1CA21C5D1F60006C132 /* Actions.sks */; };
@@ -33,6 +34,7 @@
 		B07F104B21D054F400CE2943 /* MonsterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterType.swift; sourceTree = "<group>"; };
 		B07F104E21D0571600CE2943 /* DamageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageType.swift; sourceTree = "<group>"; };
 		B07F105021D0598500CE2943 /* DefenseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenseType.swift; sourceTree = "<group>"; };
+		B07F105821D16C4F00CE2943 /* NumberRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRange.swift; sourceTree = "<group>"; };
 		B0BEF1C321C5D1F60006C132 /* Crypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BEF1C621C5D1F60006C132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BEF1C821C5D1F60006C132 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				B07F104E21D0571600CE2943 /* DamageType.swift */,
 				B07F105021D0598500CE2943 /* DefenseType.swift */,
+				B07F105821D16C4F00CE2943 /* NumberRange.swift */,
 			);
 			path = Combat;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B07F104C21D054F400CE2943 /* MonsterType.swift in Sources */,
 				B07F104921D04E6800CE2943 /* Relic.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
+				B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
