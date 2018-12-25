@@ -10,6 +10,7 @@ import Foundation
 
 class Item {
     // Fields
+    var id: Int
     var name: String
     var description: String
     var rarity: Rarity
@@ -17,7 +18,8 @@ class Item {
     var goldValue: Int
     
     // Constructor
-    init(name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int) {
+    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int) {
+        self.id = id
         self.name = name
         self.description = description
         self.rarity = rarity
@@ -37,10 +39,6 @@ class Item {
     
     // Checks if two items are the same
     func isEqualTo(item: Item) -> Bool {
-        return (self.name == item.name &&
-                self.description == item.description &&
-                self.rarity.isEqualTo(rarity: item.rarity) &&
-                self.inventorySpace == item.inventorySpace
-        )
+        return (self.id == item.id)
     }
 }
