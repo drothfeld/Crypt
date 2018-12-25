@@ -16,15 +16,17 @@ class Item {
     var rarity: Rarity
     var inventorySpace: Int
     var goldValue: Int
+    var levelRequirement: Int
     
     // Constructor
-    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int) {
+    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, levelRequirement: Int) {
         self.id = id
         self.name = name
         self.description = description
         self.rarity = rarity
         self.inventorySpace = inventorySpace
         self.goldValue = Int(Double(goldValue) * rarity.sellValueMultiplier!)
+        self.levelRequirement = levelRequirement
     }
     
     // Checks if one item has a higher rarity than another

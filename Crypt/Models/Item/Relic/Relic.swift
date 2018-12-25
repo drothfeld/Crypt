@@ -15,13 +15,13 @@ class Relic: Item {
     var damageRange: NumberRange? = NumberRange(minValue: 0, maxValue: 0)
     
     // Constructor
-    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, damageType: [DamageType], healRange: NumberRange?, damageRange: NumberRange?) {
+    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, levelRequirement: Int, damageType: [DamageType], healRange: NumberRange?, damageRange: NumberRange?) {
         self.damageType = damageType
         self.healRange = healRange
         self.damageRange = damageRange
         
         // Super constructor for item parent class
-        super.init(id: id, name: name, description: description, rarity: rarity, inventorySpace: inventorySpace, goldValue: goldValue)
+        super.init(id: id, name: name, description: description, rarity: rarity, inventorySpace: inventorySpace, goldValue: goldValue, levelRequirement: levelRequirement)
     }
     
     // Returns a simple string of a relic object

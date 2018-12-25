@@ -17,7 +17,7 @@ class Weapon: Item {
     var statBonus: [Int] // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
     
     // Constructor
-    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, damageType: [DamageType], damageRange: NumberRange?, healRange: NumberRange?, hitChance: Double, statBonus: [Int]) {
+    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, levelRequirement: Int, damageType: [DamageType], damageRange: NumberRange?, healRange: NumberRange?, hitChance: Double, statBonus: [Int]) {
         self.damageType = damageType
         self.damageRange = damageRange
         self.healRange = healRange
@@ -25,7 +25,7 @@ class Weapon: Item {
         self.statBonus = statBonus
         
         // Super constructor for item parent class
-        super.init(id: id, name: name, description: description, rarity: rarity, inventorySpace: inventorySpace, goldValue: goldValue)
+        super.init(id: id, name: name, description: description, rarity: rarity, inventorySpace: inventorySpace, goldValue: goldValue, levelRequirement: levelRequirement)
     }
     
     // Returns a simple string of a weapon object
