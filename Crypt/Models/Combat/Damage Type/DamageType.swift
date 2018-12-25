@@ -39,7 +39,7 @@ class DamageType {
     }
     
     // Checks if a damage type is weak against a defense type
-    func isWeakAgainst(defenseType: DefenseType) -> Bool {
+    func isbadAgainst(defenseType: DefenseType) -> Bool {
         for weakAgainstType in self.badAgainstDefenseType {
             if weakAgainstType.isEqualsTo(defenseType: defenseType) {
                 return true
