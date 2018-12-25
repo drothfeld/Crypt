@@ -13,20 +13,14 @@ class DamageType {
     var name: String
     var description: String
     var strongAgainstDefenseType: [DefenseType]
-    var weakAgainstDefenseType: [DefenseType]
-    var isMagic: Bool
-    var isMelee: Bool
-    var isRanged: Bool
+    var badAgainstDefenseType: [DefenseType]
     
     // Constructor
-    init(name: String, description: String, strongAgainstDefenseType: [DefenseType], weakAgainstDefenseType: [DefenseType], isMagic: Bool, isMelee: Bool, isRanged: Bool) {
+    init(name: String, description: String, strongAgainstDefenseType: [DefenseType], badAgainstDefenseType: [DefenseType]) {
         self.name = name
         self.description = description
         self.strongAgainstDefenseType = strongAgainstDefenseType
-        self.weakAgainstDefenseType = weakAgainstDefenseType
-        self.isMagic = isMagic
-        self.isMelee = isMelee
-        self.isRanged = isRanged
+        self.badAgainstDefenseType = badAgainstDefenseType
     }
     
     // Checks if two damage types are the same
@@ -46,7 +40,7 @@ class DamageType {
     
     // Checks if a damage type is weak against a defense type
     func isWeakAgainst(defenseType: DefenseType) -> Bool {
-        for weakAgainstType in self.weakAgainstDefenseType {
+        for weakAgainstType in self.badAgainstDefenseType {
             if weakAgainstType.isEqualsTo(defenseType: defenseType) {
                 return true
             }
