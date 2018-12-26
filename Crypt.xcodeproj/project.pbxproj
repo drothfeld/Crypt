@@ -27,6 +27,8 @@
 		B0BEF1D121C5D1F80006C132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1D021C5D1F80006C132 /* Assets.xcassets */; };
 		B0BEF1D421C5D1F80006C132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BEF1D221C5D1F80006C132 /* Main.storyboard */; };
 		B0DEF17821D2B2AF004EBCE9 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17721D2B2AF004EBCE9 /* Weapons.swift */; };
+		B0DEF17A21D2BB9E004EBCE9 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17921D2BB9E004EBCE9 /* Monster.swift */; };
+		B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17B21D429B5004EBCE9 /* Monsters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		B0BEF1D521C5D1F80006C132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0BEF1D621C5D1F80006C132 /* Crypt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypt.entitlements; sourceTree = "<group>"; };
 		B0DEF17721D2B2AF004EBCE9 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		B0DEF17921D2BB9E004EBCE9 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		B0DEF17B21D429B5004EBCE9 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				B07F104B21D054F400CE2943 /* MonsterType.swift */,
+				B0DEF17921D2BB9E004EBCE9 /* Monster.swift */,
+				B0DEF17B21D429B5004EBCE9 /* Monsters.swift */,
 			);
 			path = Monster;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F105121D0598500CE2943 /* DefenseType.swift in Sources */,
+				B0DEF17A21D2BB9E004EBCE9 /* Monster.swift in Sources */,
 				B07F104F21D0571600CE2943 /* DamageType.swift in Sources */,
 				B07F103E21D019BC00CE2943 /* RarityList.swift in Sources */,
 				B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */,
@@ -284,6 +291,7 @@
 				B07F104C21D054F400CE2943 /* MonsterType.swift in Sources */,
 				B07F104921D04E6800CE2943 /* Relic.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
+				B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */,
 				B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */,
 				B07F105D21D1C9A700CE2943 /* DefenseTypes.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,

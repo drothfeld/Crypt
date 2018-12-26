@@ -45,4 +45,9 @@ class Weapon: Item {
         }
         return true
     }
+    
+    // Returns the amount of damage a weapon does given attack and defense types
+//    func damageOnHit(monster: Monster, character: Character) -> Int {
+//
+//    }
 }

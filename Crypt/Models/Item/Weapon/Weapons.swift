@@ -9,7 +9,7 @@
 import Foundation
 
 let TEST_WEAPON: Weapon = Weapon(
-    id: 3000001,
+    id: 3300001,
     name: "Test Weapon",
     description: "Used by programmers to test the functionality of the weapon class. Not obtainable in regular gameplay.",
     rarity: special_rarity,
