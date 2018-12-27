@@ -14,14 +14,16 @@ class Weapon: Item {
     var damageRange: NumberRange? = NumberRange(minValue: 0, maxValue: 0)
     var healRange: NumberRange? = NumberRange(minValue: 0, maxValue: 0)
     var hitChance: Double
+    var critChance: Double
     var statBonus: [Int] // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
     
     // Constructor
-    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, levelRequirement: Int, damageType: [DamageType], damageRange: NumberRange?, healRange: NumberRange?, hitChance: Double, statBonus: [Int]) {
+    init(id: Int, name: String, description: String, rarity: Rarity, inventorySpace: Int, goldValue: Int, levelRequirement: Int, damageType: [DamageType], damageRange: NumberRange?, healRange: NumberRange?, hitChance: Double, critChance: Double, statBonus: [Int]) {
         self.damageType = damageType
         self.damageRange = damageRange
         self.healRange = healRange
         self.hitChance = hitChance
+        self.critChance = critChance
         self.statBonus = statBonus
         
         // Super constructor for item parent class
@@ -36,6 +38,14 @@ class Weapon: Item {
     // Checks if the weapon heal the user
     func doesHealing() -> Bool {
         return ((self.healRange?.isNonZero())!)
+    }
+    
+    // Check whether the weapon preformed a critical hit
+    func attackCrits() -> Bool {
+        if (NumberRange(minValue: 0, maxValue: 100).randomValueInRange() <= Int(self.critChance * 100.00)) {
+            return false
+        }
+        return true
     }
     
     // Check if the weapon hits or misses

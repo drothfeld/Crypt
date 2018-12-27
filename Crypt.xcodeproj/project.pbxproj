@@ -29,6 +29,7 @@
 		B0DEF17821D2B2AF004EBCE9 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17721D2B2AF004EBCE9 /* Weapons.swift */; };
 		B0DEF17A21D2BB9E004EBCE9 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17921D2BB9E004EBCE9 /* Monster.swift */; };
 		B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17B21D429B5004EBCE9 /* Monsters.swift */; };
+		B0DEF17F21D55A16004EBCE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17E21D55A16004EBCE9 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		B0DEF17721D2B2AF004EBCE9 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		B0DEF17921D2BB9E004EBCE9 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		B0DEF17B21D429B5004EBCE9 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
+		B0DEF17E21D55A16004EBCE9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		B07F103421CE0E7F00CE2943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0DEF17D21D55A06004EBCE9 /* Character */,
 				B07F104D21D056FC00CE2943 /* Combat */,
 				B07F104A21D054D400CE2943 /* Monster */,
 				B07F103F21D01B6400CE2943 /* Item */,
@@ -205,6 +208,14 @@
 			path = Crypt;
 			sourceTree = "<group>";
 		};
+		B0DEF17D21D55A06004EBCE9 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF17E21D55A16004EBCE9 /* Character.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +306,7 @@
 				B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */,
 				B07F105D21D1C9A700CE2943 /* DefenseTypes.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,
+				B0DEF17F21D55A16004EBCE9 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

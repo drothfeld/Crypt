@@ -20,5 +20,22 @@ let TEST_WEAPON: Weapon = Weapon(
     damageRange: NumberRange(minValue: 75, maxValue: 100),
     healRange: NumberRange(minValue: 5, maxValue: 10),
     hitChance: 0.75,
-    statBonus: [5, 2, 3, 1, 2, 2] // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
+    critChance: 0.40,
+    statBonus: [5, 2, 3, 1, 2, 2]  // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
+)
+
+let short_rusted_sword: Weapon = Weapon(
+    id: 3300002,
+    name: "Short Rusted Sword",
+    description: "The most basic of all weapons. Every new character starting their journey through the Crypt receives one of these as a means to defend against the hordes of monsters they will encounter. But who is giving away all of these swords... ",
+    rarity: ordinary_rarity,
+    inventorySpace: 1,
+    goldValue: 5,
+    levelRequirement: 1,
+    damageType: [physical_melee_damage],
+    damageRange: NumberRange(minValue: 8, maxValue: 15),
+    healRange: NumberRange(minValue: 0, maxValue: 0),
+    hitChance: 0.95,
+    critChance: 0.05,
+    statBonus: [0, 0, 0, 0, 0 ,0]  // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
 )
