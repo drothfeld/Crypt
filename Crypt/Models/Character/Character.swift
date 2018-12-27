@@ -97,7 +97,26 @@ class Character {
         return (self.level >= item.levelRequirement)
     }
     
+    // Heals a character for a specified amount
+    func restoreHealth(healAmount: Int) {
+        if (self.statCurrentHealth + healAmount > self.statTotalHealth) {
+            self.statCurrentHealth = self.statTotalHealth
+        } else {
+            self.statCurrentHealth += healAmount
+        }
+    }
+    
+    // Restores mana to a character for a specified amount
+    func restoreMana(manaAmount: Int) {
+        if (self.statCurrentMana + manaAmount > self.statTotalMana) {
+            self.statCurrentMana = self.statTotalMana
+        } else {
+            self.statCurrentMana += manaAmount
+        }
+    }
+    
     // Returns whether a character has enough inventory space to store an item
 //    func hasEnoughInventorySpaceToStore(item: Item) -> Bool {
 //    }
+    
 }

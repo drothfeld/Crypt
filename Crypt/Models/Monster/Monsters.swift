@@ -15,6 +15,8 @@ let TEST_MONSTER: Monster = Monster(
     level: 15,
     speed: 23,
     health: 166,
+    strength: 50,
+    defense: 32,
     critChance: 0.05,
     hitChance: 0.80,
     isBoss: false,

@@ -36,12 +36,12 @@ class Weapon: Item {
     }
     
     // Checks if the weapon heal the user
-    func doesHealing() -> Bool {
+    private func doesHealing() -> Bool {
         return ((self.healRange?.isNonZero())!)
     }
     
     // Check whether the weapon preformed a critical hit
-    func attackCrits() -> Bool {
+    private func attackCrits() -> Bool {
         if (NumberRange(minValue: 0, maxValue: 100).randomValueInRange() <= Int(self.critChance * 100.00)) {
             return false
         }
@@ -57,7 +57,27 @@ class Weapon: Item {
     }
     
     // Returns the amount of damage a weapon does given attack and defense types
-//    func damageOnHit(monster: Monster, character: Character) -> Int {
-//
-//    }
+    func damageOnHit(monster: Monster, character: Character) -> Int {
+        var damageMultiplier = 1.0
+        let damageBaseAmount = (self.damageRange?.randomValueInRange())! + character.statStrength - monster.defense
+        if (self.attackCrits()) { damageMultiplier += 1.0 }
+        for type in self.damageType {
+            if type.isStrongAgainst(defenseType: monster.defenseType) {
+                damageMultiplier += 0.25
+            }
+            else if type.isbadAgainst(defenseType: monster.defenseType) {
+                damageMultiplier -= 0.25
+            }
+        }
+        return Int(Double(damageBaseAmount) * damageMultiplier)
+    }
+    
+    // Returns the amount of healing a weapon does on hit
+    func healOnHit(character: Character) -> Int {
+        if (!self.doesHealing()) {
+            return 0
+        } else {
+            return self.healRange!.randomValueInRange()
+        }
+    }
 }
