@@ -22,7 +22,7 @@ class Character {
 //    var equippedHands: Hands
 //    var equippedBack: Back
     
-//    var inventory
+    var inventory: Inventory = Inventory()
     
     var experiencePointsTillNextLevel: Int = 100
     var currentExperiencePoints: Int = 0

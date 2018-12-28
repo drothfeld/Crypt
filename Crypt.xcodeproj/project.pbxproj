@@ -30,6 +30,7 @@
 		B0DEF17A21D2BB9E004EBCE9 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17921D2BB9E004EBCE9 /* Monster.swift */; };
 		B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17B21D429B5004EBCE9 /* Monsters.swift */; };
 		B0DEF17F21D55A16004EBCE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17E21D55A16004EBCE9 /* Character.swift */; };
+		B0DEF18221D6B4DB004EBCE9 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF18121D6B4DB004EBCE9 /* Inventory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B0DEF17921D2BB9E004EBCE9 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		B0DEF17B21D429B5004EBCE9 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
 		B0DEF17E21D55A16004EBCE9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B0DEF18121D6B4DB004EBCE9 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		B07F103421CE0E7F00CE2943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0DEF18021D6B4C4004EBCE9 /* Inventory */,
 				B0DEF17D21D55A06004EBCE9 /* Character */,
 				B07F104D21D056FC00CE2943 /* Combat */,
 				B07F104A21D054D400CE2943 /* Monster */,
@@ -216,6 +219,14 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		B0DEF18021D6B4C4004EBCE9 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				B0DEF18121D6B4DB004EBCE9 /* Inventory.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +311,7 @@
 				B0BEF1CD21C5D1F60006C132 /* GameScene.swift in Sources */,
 				B07F104721D01C2100CE2943 /* Item.swift in Sources */,
 				B07F104C21D054F400CE2943 /* MonsterType.swift in Sources */,
+				B0DEF18221D6B4DB004EBCE9 /* Inventory.swift in Sources */,
 				B07F104921D04E6800CE2943 /* Relic.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
 				B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */,
