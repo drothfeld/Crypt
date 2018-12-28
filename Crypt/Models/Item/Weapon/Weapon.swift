@@ -73,7 +73,7 @@ class Weapon: Item {
     }
     
     // Returns the amount of healing a weapon does on hit
-    func healOnHit(character: Character) -> Int {
+    func healOnHit() -> Int {
         if (!self.doesHealing()) {
             return 0
         } else {

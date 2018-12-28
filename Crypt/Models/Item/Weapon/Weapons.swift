@@ -24,9 +24,9 @@ let TEST_WEAPON: Weapon = Weapon(
     statBonus: [5, 2, 3, 1, 2, 2]  // [HEALTH, MANA, STR, MAGIC, DEF, SPEED]
 )
 
-let short_rusted_sword: Weapon = Weapon(
+let rusted_short_sword: Weapon = Weapon(
     id: 3300002,
-    name: "Short Rusted Sword",
+    name: "Rusted Short Sword",
     description: "The most basic of all weapons. Every new character starting their journey through the Crypt receives one of these as a means to defend against the hordes of monsters they will encounter. But who is giving away all of these swords... ",
     rarity: ordinary_rarity,
     inventorySpace: 1,

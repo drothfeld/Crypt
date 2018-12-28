@@ -66,4 +66,22 @@ class Inventory {
         return false
     }
     
+    // Append gold by specific amount
+    func appendGold(goldAmount: Int) {
+        self.currentGold += goldAmount
+    }
+    
+    // Lose gold by specific amount
+    func loseGold(goldAmount: Int) {
+        self.currentGold -= goldAmount
+    }
+    
+    // Check if inventory contains specific gold amount
+    func hasGold(goldAmount: Int) -> Bool {
+        if (self.currentGold >= goldAmount) {
+            return true
+        }
+        return false
+    }
+    
 }

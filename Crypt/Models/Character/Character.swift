@@ -40,7 +40,7 @@ class Character {
     init(playerName: String) {
         self.playerName = playerName
         self.level = 1
-        self.equippedWeapon = short_rusted_sword
+        self.equippedWeapon = rusted_short_sword
         self.generateNewCharacterStats()
     }
     
@@ -116,7 +116,31 @@ class Character {
     }
     
     // Returns whether a character has enough inventory space to store an item
-//    func hasEnoughInventorySpaceToStore(item: Item) -> Bool {
-//    }
+    func hasInventorySpaceFor(item: Item) -> Bool {
+        return self.inventory.isSpaceAvailable(item: item)
+    }
+    
+    // Attempt to equip a new weapon if there is inventory space for the old one
+    func equipNewWeapon(weapon: Weapon) {
+        if (self.inventory.isSpaceAvailable(item: self.equippedWeapon)) {
+            self.inventory.addItem(item: self.equippedWeapon)
+            self.equippedWeapon = weapon
+        }
+    }
+    
+    // Character gets gold
+    func getGold(gold: Int) {
+        self.inventory.appendGold(goldAmount: gold)
+    }
+    
+    // Character loses gold
+    func loseGold(gold: Int) {
+        self.inventory.loseGold(goldAmount: gold)
+    }
+    
+    // Check if character has gold
+    func hasGold(gold: Int) -> Bool {
+        return self.inventory.hasGold(goldAmount: gold)
+    }
     
 }
