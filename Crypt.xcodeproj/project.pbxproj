@@ -31,6 +31,14 @@
 		B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17B21D429B5004EBCE9 /* Monsters.swift */; };
 		B0DEF17F21D55A16004EBCE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF17E21D55A16004EBCE9 /* Character.swift */; };
 		B0DEF18221D6B4DB004EBCE9 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF18121D6B4DB004EBCE9 /* Inventory.swift */; };
+		B0DEF18821D98499004EBCE9 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF18721D98499004EBCE9 /* Gear.swift */; };
+		B0DEF18C21D9888B004EBCE9 /* Helms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF18B21D9888B004EBCE9 /* Helms.swift */; };
+		B0DEF19021D98B26004EBCE9 /* Shoulders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF18F21D98B26004EBCE9 /* Shoulders.swift */; };
+		B0DEF19221D98C53004EBCE9 /* Chests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19121D98C53004EBCE9 /* Chests.swift */; };
+		B0DEF19421D98D3C004EBCE9 /* Legs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19321D98D3C004EBCE9 /* Legs.swift */; };
+		B0DEF19621D98DE6004EBCE9 /* Feet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19521D98DE6004EBCE9 /* Feet.swift */; };
+		B0DEF19821D98F26004EBCE9 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19721D98F26004EBCE9 /* Hands.swift */; };
+		B0DEF19A21D99029004EBCE9 /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19921D99029004EBCE9 /* Back.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +69,14 @@
 		B0DEF17B21D429B5004EBCE9 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
 		B0DEF17E21D55A16004EBCE9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B0DEF18121D6B4DB004EBCE9 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		B0DEF18721D98499004EBCE9 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		B0DEF18B21D9888B004EBCE9 /* Helms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helms.swift; sourceTree = "<group>"; };
+		B0DEF18F21D98B26004EBCE9 /* Shoulders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoulders.swift; sourceTree = "<group>"; };
+		B0DEF19121D98C53004EBCE9 /* Chests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chests.swift; sourceTree = "<group>"; };
+		B0DEF19321D98D3C004EBCE9 /* Legs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legs.swift; sourceTree = "<group>"; };
+		B0DEF19521D98DE6004EBCE9 /* Feet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feet.swift; sourceTree = "<group>"; };
+		B0DEF19721D98F26004EBCE9 /* Hands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
+		B0DEF19921D99029004EBCE9 /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,14 @@
 		B07F104021D01B7E00CE2943 /* Gear */ = {
 			isa = PBXGroup;
 			children = (
+				B0DEF18721D98499004EBCE9 /* Gear.swift */,
+				B0DEF18B21D9888B004EBCE9 /* Helms.swift */,
+				B0DEF18F21D98B26004EBCE9 /* Shoulders.swift */,
+				B0DEF19121D98C53004EBCE9 /* Chests.swift */,
+				B0DEF19321D98D3C004EBCE9 /* Legs.swift */,
+				B0DEF19521D98DE6004EBCE9 /* Feet.swift */,
+				B0DEF19721D98F26004EBCE9 /* Hands.swift */,
+				B0DEF19921D99029004EBCE9 /* Back.swift */,
 			);
 			path = Gear;
 			sourceTree = "<group>";
@@ -300,24 +324,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F105121D0598500CE2943 /* DefenseType.swift in Sources */,
+				B0DEF19821D98F26004EBCE9 /* Hands.swift in Sources */,
 				B0DEF17A21D2BB9E004EBCE9 /* Monster.swift in Sources */,
 				B07F104F21D0571600CE2943 /* DamageType.swift in Sources */,
+				B0DEF18C21D9888B004EBCE9 /* Helms.swift in Sources */,
+				B0DEF19021D98B26004EBCE9 /* Shoulders.swift in Sources */,
 				B07F103E21D019BC00CE2943 /* RarityList.swift in Sources */,
 				B07F103C21CE128B00CE2943 /* Rarities.swift in Sources */,
 				B07F105B21D1C82900CE2943 /* DamageTypes.swift in Sources */,
 				B0DEF17821D2B2AF004EBCE9 /* Weapons.swift in Sources */,
+				B0DEF19221D98C53004EBCE9 /* Chests.swift in Sources */,
+				B0DEF19421D98D3C004EBCE9 /* Legs.swift in Sources */,
 				B07F106121D2116900CE2943 /* Weapon.swift in Sources */,
 				B0BEF1CF21C5D1F60006C132 /* ViewController.swift in Sources */,
+				B0DEF19621D98DE6004EBCE9 /* Feet.swift in Sources */,
 				B0BEF1CD21C5D1F60006C132 /* GameScene.swift in Sources */,
 				B07F104721D01C2100CE2943 /* Item.swift in Sources */,
 				B07F104C21D054F400CE2943 /* MonsterType.swift in Sources */,
 				B0DEF18221D6B4DB004EBCE9 /* Inventory.swift in Sources */,
 				B07F104921D04E6800CE2943 /* Relic.swift in Sources */,
+				B0DEF18821D98499004EBCE9 /* Gear.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
 				B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */,
 				B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */,
 				B07F105D21D1C9A700CE2943 /* DefenseTypes.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,
+				B0DEF19A21D99029004EBCE9 /* Back.swift in Sources */,
 				B0DEF17F21D55A16004EBCE9 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
