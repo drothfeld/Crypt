@@ -79,10 +79,10 @@ class Monster {
         let damageBaseAmount = (self.damageRange.randomValueInRange() + self.strength - character.statDefense)
         if (self.attackCrits()) { damageMultiplier += 1.0 }
         for type in self.damageType {
-            if type.isStrongAgainst(defenseType: <#T##DefenseType#>) {
+            if type.isStrongAgainst(defenseType: character.equippedChest.defenseType!) {
                 damageMultiplier += 0.25
             }
-            else if type.isbadAgainst(defenseType: <#T##DefenseType#>) {
+            else if type.isbadAgainst(defenseType: character.equippedChest.defenseType!) {
                 damageMultiplier -= 0.25
             }
         }

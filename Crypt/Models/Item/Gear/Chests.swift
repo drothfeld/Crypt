@@ -17,7 +17,8 @@ let TEST_CHEST: Gear = Gear(
     goldValue: 100,
     levelRequirement: 10,
     statBonus: [5, 5, 5, 5, 5, 5],
-    gearType: "Chest"
+    gearType: "Chest",
+    defenseType: plate_defense
 )
 
 let old_t_shirt: Gear = Gear(
@@ -29,5 +30,6 @@ let old_t_shirt: Gear = Gear(
     goldValue: 1,
     levelRequirement: 1,
     statBonus: [0, 0, 0, 0, 0, 0],
-    gearType: "Chest"
+    gearType: "Chest",
+    defenseType: cloth_defense
 )
