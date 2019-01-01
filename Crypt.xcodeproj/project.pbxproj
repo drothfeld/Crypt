@@ -39,6 +39,7 @@
 		B0DEF19621D98DE6004EBCE9 /* Feet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19521D98DE6004EBCE9 /* Feet.swift */; };
 		B0DEF19821D98F26004EBCE9 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19721D98F26004EBCE9 /* Hands.swift */; };
 		B0DEF19A21D99029004EBCE9 /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19921D99029004EBCE9 /* Back.swift */; };
+		B0DEF19C21DB331D004EBCE9 /* Relics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEF19B21DB331D004EBCE9 /* Relics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		B0DEF19521D98DE6004EBCE9 /* Feet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feet.swift; sourceTree = "<group>"; };
 		B0DEF19721D98F26004EBCE9 /* Hands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
 		B0DEF19921D99029004EBCE9 /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
+		B0DEF19B21DB331D004EBCE9 /* Relics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B07F104821D04E6800CE2943 /* Relic.swift */,
+				B0DEF19B21DB331D004EBCE9 /* Relics.swift */,
 			);
 			path = Relic;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				B0DEF18821D98499004EBCE9 /* Gear.swift in Sources */,
 				B07F103921CE0F1E00CE2943 /* Rarity.swift in Sources */,
 				B0DEF17C21D429B5004EBCE9 /* Monsters.swift in Sources */,
+				B0DEF19C21DB331D004EBCE9 /* Relics.swift in Sources */,
 				B07F105921D16C4F00CE2943 /* NumberRange.swift in Sources */,
 				B07F105D21D1C9A700CE2943 /* DefenseTypes.swift in Sources */,
 				B0BEF1C721C5D1F60006C132 /* AppDelegate.swift in Sources */,
