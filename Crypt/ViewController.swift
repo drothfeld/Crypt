@@ -16,6 +16,8 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        TESTING_MODEL_FUNCTIONALITY()
 
         if let view = self.skView {
             // Load the SKScene from 'GameScene.sks'
@@ -32,6 +34,13 @@ class ViewController: NSViewController {
             view.showsFPS = true
             view.showsNodeCount = true
         }
+    }
+    
+    // Used to test the functionality of the different models
+    func TESTING_MODEL_FUNCTIONALITY() {
+        var testCharacter = Character(playerName: "Bongo")
+        var testMonster = TEST_MONSTER
+        // PAUSE PROGRAM EXECUTION, CHECK VALUES
     }
 }
 
