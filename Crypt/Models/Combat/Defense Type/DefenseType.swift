@@ -12,15 +12,11 @@ class DefenseType {
     // Fields
     var name: String
     var description: String
-    var strongAgainstDamageType: [DamageType]
-    var weakAgainstDamageType: [DamageType]
     
     // Constructor
-    init(name: String, description: String, strongAgainstDamageType: [DamageType], weakAgainstDamageType: [DamageType]) {
+    init(name: String, description: String) {
         self.name = name
         self.description = description
-        self.strongAgainstDamageType = strongAgainstDamageType
-        self.weakAgainstDamageType = weakAgainstDamageType
     }
     
     // Checks if two defense types are the same

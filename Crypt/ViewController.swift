@@ -17,7 +17,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        TESTING_MODEL_FUNCTIONALITY()
+        TESTING_MODEL_FUNCTIONALITY()
 
         if let view = self.skView {
             // Load the SKScene from 'GameScene.sks'
@@ -40,6 +40,8 @@ class ViewController: NSViewController {
     func TESTING_MODEL_FUNCTIONALITY() {
         var testCharacter = Character(playerName: "Bongo")
         var testMonster = TEST_MONSTER
+        
+        testCharacter.levelUp()
         // PAUSE PROGRAM EXECUTION, CHECK VALUES
     }
 }
