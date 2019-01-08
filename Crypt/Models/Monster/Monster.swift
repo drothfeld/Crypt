@@ -16,6 +16,7 @@ class Monster {
     var level: Int
     var speed: Int
     var health: Int
+    var healthMax: Int
     var strength: Int
     var defense: Int
     var critChance: Double
@@ -40,6 +41,7 @@ class Monster {
         self.level = level
         self.speed = speed
         self.health = health
+        self.healthMax = health
         self.strength = strength
         self.defense = defense
         self.critChance = critChance
@@ -71,6 +73,25 @@ class Monster {
             return false
         }
         return true
+    }
+    
+    // Returns whether the monster is killed
+    func isDead() -> Bool {
+        return (self.health <= 0)
+    }
+    
+    // Updates the monster's health after taking damage
+    func takeDamage(damageAmount: Int) {
+        self.health -= damageAmount
+    }
+    
+    // Updates the monster's health after restoring damage
+    func restoreHealth(healAmount: Int) {
+        if (self.health + healAmount > self.healthMax) {
+            self.health = self.healthMax
+        } else {
+            self.health += healAmount
+        }
     }
     
     // Returns the amount of damage a monster does given attack and defense types
