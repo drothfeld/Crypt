@@ -193,4 +193,14 @@ class Character {
         return self.inventory.hasGold(goldAmount: gold)
     }
     
+    // Returns whether character is killed
+    func isDead() -> Bool {
+        return (self.statCurrentHealth <= 0)
+    }
+    
+    // Updates the character's health after taking damage
+    func takeDamage(damageAmount: Int) {
+        self.statCurrentHealth -= damageAmount
+    }
+    
 }

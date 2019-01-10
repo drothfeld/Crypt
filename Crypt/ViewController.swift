@@ -43,23 +43,45 @@ class ViewController: NSViewController {
         
         // Testing character level up
         testCharacter.levelUp()
-        testCharacter.levelUp()
         
-        // Testing character attacking monster
-        if (testCharacter.equippedWeapon.attackMisses()) {
+        // Character attacks monster
+        TESTING_CHARACTER_ATTACK_MONSTER(character: testCharacter, monster: testMonster)
+        // Monster attacks character
+        TESTING_MONSTER_ATTACK_CHARACTER(monster: testMonster, character: testCharacter)
+        
+        // PAUSE PROGRAM EXECUTION, CHECK VALUES
+    }
+    
+    // Used to test a character attacking a monster functionality
+    func TESTING_CHARACTER_ATTACK_MONSTER(character: Character, monster: Monster) {
+        if (character.equippedWeapon.attackMisses()) {
             print("character attack missed the monster!")
         } else {
-            let damageDone = testCharacter.equippedWeapon.damageOnHit(monster: testMonster, character: testCharacter)
-            testMonster.takeDamage(damageAmount: damageDone)
+            let damageDone = character.equippedWeapon.damageOnHit(monster: monster, character: character)
+            monster.takeDamage(damageAmount: damageDone)
             print("character attack does " + String(damageDone) + " damage to the monster!")
             
             // Check if monster is killed
-            if (testMonster.isDead()) {
+            if (monster.isDead()) {
                 print("character has killed the monster!")
             }
         }
-        
-        // PAUSE PROGRAM EXECUTION, CHECK VALUES
+    }
+    
+    // Used to test a monster attacking a character functionality
+    func TESTING_MONSTER_ATTACK_CHARACTER(monster: Monster, character: Character) {
+        if (monster.attackMisses()) {
+            print("monster attack missed the character!")
+        } else {
+            let damageDone = monster.damageOnHit(character: character)
+            character.takeDamage(damageAmount: damageDone)
+            print("monster attack does " + String(damageDone) + " damage to the character!")
+            
+            // Check if character is killed
+            if (character.isDead()) {
+                print("monster has killed the character!")
+            }
+        }
     }
 }
 
