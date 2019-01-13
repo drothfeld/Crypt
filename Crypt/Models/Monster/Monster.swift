@@ -85,6 +85,11 @@ class Monster {
         self.health -= damageAmount
     }
     
+    // Returns whether the monster drops loot when it dies
+    func dropsLoot() -> Bool {
+        return NumberRange(minValue: 0, maxValue: 100).randomValueInRange() <= Int(self.lootDropChance * 100.00)
+    }
+    
     // Updates the monster's health after restoring damage
     func restoreHealth(healAmount: Int) {
         if (self.health + healAmount > self.healthMax) {
