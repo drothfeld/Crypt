@@ -43,6 +43,7 @@ class ViewController: NSViewController {
         
         // Testing character level up
         testCharacter.levelUp()
+//        testCharacter.applyStatBonus(statBonus: [999, 999, 999, 999, 999, 999])
         
         // Character attacks monster
         TESTING_CHARACTER_ATTACK_MONSTER(character: testCharacter, monster: testMonster)
@@ -64,6 +65,25 @@ class ViewController: NSViewController {
             // Check if monster is killed
             if (monster.isDead()) {
                 print("character has killed the monster!")
+                
+                // Check if the monster drops any bonus loot
+                if (monster.dropsLoot()) {
+                    print("monster dropped some loot!")
+                }
+                
+                // Check if the monster is guarenteed to drop specific loot
+                if (monster.lootGuaranteedToDrop != nil) {
+                    for droppedItem in monster.lootGuaranteedToDrop! {
+                        if character.hasInventorySpaceFor(item: droppedItem) {
+                            character.inventory.addItem(item: droppedItem)
+                            print("character added " + droppedItem.name + " to the inventory")
+                            print("character's inventory has " + String(character.inventory.currentStorageCapacity) + " free spaces left.")
+                        }
+                        else {
+                            print("character doesn't have enough inventory space for: " + droppedItem.name)
+                        }
+                    }
+                }
             }
         }
     }

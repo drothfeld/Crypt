@@ -25,15 +25,12 @@ class Inventory {
     
     // Returns whether the inventory is full
     func isFull() -> Bool {
-        if (self.currentStorageCapacity == 0) {
-            return true
-        }
-        return false
+       return self.currentStorageCapacity == 0
     }
     
     // Returns whether there is enough free space for a new item
     func isSpaceAvailable(item: Item) -> Bool {
-        if ((self.maxStorageCapacity - self.currentStorageCapacity) >= item.inventorySpace) {
+        if (self.currentStorageCapacity >= item.inventorySpace) {
             return true
         }
         return false

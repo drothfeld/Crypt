@@ -25,6 +25,7 @@ let TEST_MONSTER: Monster = Monster(
     defenseType: demon_defense,
     lootRarityDropPotential: [ordinary_rarity, treasured_rarity],
     lootDropChance: 0.50,
+    lootGuaranteedToDrop: [TEST_RELIC, TEST_WEAPON],
     goldDropRange: NumberRange(minValue: 13, maxValue: 20),
     baseExperienceAwarded: 6
 )
