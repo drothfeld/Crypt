@@ -13,27 +13,38 @@ import GameplayKit
 class ViewController: NSViewController {
 
     @IBOutlet var skView: SKView!
+    var debugLogDisplay: SKLabelNode!
+    var debugLogFull: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TESTING_MODEL_FUNCTIONALITY()
-
         if let view = self.skView {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                
+                debugLogDisplay = scene.childNode(withName: "//debugLog") as? SKLabelNode
                 // Present the scene
                 view.presentScene(scene)
             }
             
             view.ignoresSiblingOrder = true
-            
             view.showsFPS = true
             view.showsNodeCount = true
         }
+        TESTING_MODEL_FUNCTIONALITY()
+    }
+    
+    // prints new log text to the scene
+    func updateLog(text: String) {
+        let debugLogSplitText = debugLogDisplay.text?.components(separatedBy: .newlines)
+        debugLogDisplay.text = debugLogSplitText![1] + "\n" +
+                        debugLogSplitText![2] + "\n" +
+                        debugLogSplitText![3] + "\n" +
+                        debugLogSplitText![4] + "\n" +
+                        debugLogSplitText![5] + "\n: " + text
+        
     }
     
     // Used to test the functionality of the different models
@@ -43,6 +54,7 @@ class ViewController: NSViewController {
         
         // Testing character level up
         testCharacter.levelUp()
+        updateLog(text: "character leveled up!")
 //        testCharacter.applyStatBonus(statBonus: [999, 999, 999, 999, 999, 999])
         
         // Character attacks monster
@@ -56,19 +68,19 @@ class ViewController: NSViewController {
     // Used to test a character attacking a monster functionality
     func TESTING_CHARACTER_ATTACK_MONSTER(character: Character, monster: Monster) {
         if (character.equippedWeapon.attackMisses()) {
-            print("character attack missed the monster!")
+            updateLog(text: "character attack missed the monster!")
         } else {
             let damageDone = character.equippedWeapon.damageOnHit(monster: monster, character: character)
             monster.takeDamage(damageAmount: damageDone)
-            print("character attack does " + String(damageDone) + " damage to the monster!")
+            updateLog(text: "character attack does " + String(damageDone) + " damage to the monster!")
             
             // Check if monster is killed
             if (monster.isDead()) {
-                print("character has killed the monster!")
+                updateLog(text: "character has killed the monster!")
                 
                 // Check if the monster drops any bonus loot
                 if (monster.dropsLoot()) {
-                    print("monster dropped some loot!")
+                    updateLog(text: "monster dropped some loot!")
                 }
                 
                 // Check if the monster is guarenteed to drop specific loot
@@ -76,11 +88,11 @@ class ViewController: NSViewController {
                     for droppedItem in monster.lootGuaranteedToDrop! {
                         if character.hasInventorySpaceFor(item: droppedItem) {
                             character.inventory.addItem(item: droppedItem)
-                            print("character added " + droppedItem.name + " to the inventory")
-                            print("character's inventory has " + String(character.inventory.currentStorageCapacity) + " free spaces left.")
+                            updateLog(text: "character added " + droppedItem.name + " to the inventory.")
+                            updateLog(text: "character's inventory has " + String(character.inventory.currentStorageCapacity) + " free spaces left.")
                         }
                         else {
-                            print("character doesn't have enough inventory space for: " + droppedItem.name)
+                            updateLog(text: "character doesn't have enough inventory space for: " + droppedItem.name)
                         }
                     }
                 }
@@ -91,15 +103,15 @@ class ViewController: NSViewController {
     // Used to test a monster attacking a character functionality
     func TESTING_MONSTER_ATTACK_CHARACTER(monster: Monster, character: Character) {
         if (monster.attackMisses()) {
-            print("monster attack missed the character!")
+            updateLog(text: "monster attack missed the character!")
         } else {
             let damageDone = monster.damageOnHit(character: character)
             character.takeDamage(damageAmount: damageDone)
-            print("monster attack does " + String(damageDone) + " damage to the character!")
+            updateLog(text: "monster attack does " + String(damageDone) + " damage to the character!")
             
             // Check if character is killed
             if (character.isDead()) {
-                print("monster has killed the character!")
+                updateLog(text: "monster has killed the character!")
             }
         }
     }
